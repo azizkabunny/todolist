@@ -25,7 +25,7 @@ const TodoItem = ({ item }) => {
         />
         <IconButton type='edit' clbFunc={() => dispatch(selectTodo(item))} />
         <IconButton
-          clbFunc={() => dispatch(deleteSingleTodo(item))}
+          clbFunc={() => dispatch(deleteSingleTodo(item.id))}
           type='delete'
         />
       </div>
